@@ -18,6 +18,7 @@ Open vivado(2021.2) and open Varunmadhavam github page's project file.
 Editing the file "top-arty.vhdl" from line number - 128
   
 From this lines of codes:
+  
     gpio_in(0) <= sw(0);
     gpio_in(1) <= sw(1);
     gpio_in(2) <= sw(2);
@@ -29,6 +30,7 @@ From this lines of codes:
     led(3) <= gpio_out(3) when gpio_dir(3) = '1' else 'Z';
   
   To 
+  
     led(0) <= sw(0);
     led(1) <= sw(1);
     led(2) <= sw(2):
